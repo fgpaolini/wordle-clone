@@ -9,3 +9,10 @@ body {
     background: #18181A;
     font-family: nyt franklin, sans-serif;
 }
+
+h1 {
+    color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}

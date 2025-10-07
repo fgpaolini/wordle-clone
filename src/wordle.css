@@ -8,11 +8,19 @@
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
     gap: 6px;
+    margin-bottom: 10px;
 }
+
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+}
+
 
 .grid-item {
     display: flex;
@@ -21,6 +29,11 @@
     width: 58px;
     height: 58px;
     border: solid 2px #3a3a3c;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s, border-color 0.2s;
+
 }
 
 .grid-item h1 {
@@ -30,13 +43,6 @@
     color: #f8f8f8;
 }
 
-
-/*.keyboard-container {
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    gap: 4px;
-    margin-top: 20px;
-}*/
 
 .keyboard-row {
     display: grid;
