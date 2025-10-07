@@ -1,0 +1,75 @@
+
+.wordle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 500px;
+    gap: 6px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    border: solid 2px #3a3a3c;
+}
+
+.grid-item h1 {
+    font-size: 32px;
+    font-family: nyt franklin, sans-serif;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+
+/*.keyboard-container {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 4px;
+    margin-top: 20px;
+}*/
+
+.keyboard-row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+}
+
+.keyboard-row-2 {
+    grid-template-columns: repeat(9, 1fr);
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.keyboard-row-3 {
+    grid-template-columns: 1.5fr repeat(7, 1fr)  1.5fr;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.key {
+    border: none;
+    background-color: #818384;
+    color: white;
+    font-size: 20px;
+    width: 43px;
+    height: 58px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.key.enter,
+.key.del {
+    width: 65px;
+    font-size: 15px;
+}
