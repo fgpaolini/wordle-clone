@@ -6,8 +6,8 @@
 
 body {
     padding: 40px;
-    background: #18181A;
-    font-family: nyt franklin, sans-serif;
+    background: #121213;
+    font-family: nyt-franklin, sans-serif;
 }
 
 h1 {
@@ -15,4 +15,9 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+.button {
+    font-family: nyt-franklin, sans-serif;
+
 }

@@ -40,6 +40,7 @@
     font-size: 32px;
     font-family: nyt franklin, sans-serif;
     text-align: center;
+    margin: 0 auto;
     color: #f8f8f8;
 }
 
@@ -70,12 +71,18 @@
     width: 43px;
     height: 58px;
     margin: 2px;
+    font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
+    font-family: nyt franklin, sans-serif;
 }
 
 .key.enter,
 .key.del {
     width: 65px;
     font-size: 15px;
+}
+
+.key.green{
+    background-color: #538D4E;
 }
